@@ -1,0 +1,33 @@
+html:
+  head:
+    title: RblxLuauDevCode
+    author: HGBNoob
+    description: rblxluaudevcode group
+    encoding: utf-8
+links:
+  base_url: https://rblxluaudevcode.github.io
+  social_media:
+    github: https://github.com/RblxLuauDevCode/
+    youtube: https://youtube.com/channel/UCLM3MVKtxcAxNQaFEcFOdzQ
+    roblox:
+      group: https://rblx.social/15876285
+      owner: https://user.rblx.name/HugeBluebelliedNoob
+include: [".htaccess"]
+exclude: ["Gemfile", "Gemfile.lock"]
+keep_files: [".git", ".svn"]
+source: .
+collections_dir: .
+plugins_dir: _plugins
+safe: false
+plugins:
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-pwa
+  - jekyll-avatar
+  - jekyll-json-feed
+  - jekyll-image_optimizer
