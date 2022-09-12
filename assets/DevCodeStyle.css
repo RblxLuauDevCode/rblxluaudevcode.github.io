@@ -1,13 +1,24 @@
+/* Import Begin */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+/* Import End */
+
+img {
+  width: 250px;
+  border-radius: 6px;
+  border: solid rgba(0,0,0,0.1) 5px;
+}
+
 body {
     margin: 1px;
     color: white;
+  
     background: black;
 }
 
 .appmain {
     background: grey;
     margin: 0;
-    padding: 4px;
+    padding: 16px;
     border-radius: 8px;
 }
 
@@ -19,17 +30,34 @@ body {
     text-align: center;
 }
 
+.headertext {
+  background: none;
+  margin: 0;
+  overflow: hidden;
+}
+.headertext:hover {
+    
+    animation: textflashing 0.3s ease-in-out infinite;
+}
+
+
+.header > a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  margin: 0;
+}
 nav {
     display: flex;
 }
 
 a {
+  padding: 2px;
     transition: all 0.5s ease-out;
     color: white;
     text-decoration: none;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    margin: 4px;
+    margin: 2px;
     flex: 1;
 }
 
@@ -38,15 +66,29 @@ a:hover {
     animation: linkflashing 0.3s ease-in-out infinite;
 }
 
+@keyframes textflashing {
+
+    0%,
+    100% {
+        color: green;
+    }
+
+    50% {
+        color: darkgreen;
+    }
+}
+
 @keyframes linkflashing {
 
     0%,
     100% {
         background: green;
+      flex: 1.5;
     }
 
     50% {
         background: darkgreen;
+      flex: 1.6;
     }
 }
 
@@ -78,4 +120,12 @@ li {
             hsl(127deg 100% 63%) 100%);
     border-radius: 5px;
     margin: 2px;
+}
+footer {
+  background: grey;
+  border-radius: 4px;
+  margin: 4px 2px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+  overflow: hidden;
 }

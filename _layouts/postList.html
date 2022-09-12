@@ -1,0 +1,16 @@
+---
+title: list of Posts
+layout: default
+---
+
+<h1>Collection of Posts</h1>
+
+<h2>this page will show list of links direct to post pages by order found.</h2>
+
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+</ul>
