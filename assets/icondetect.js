@@ -5,3 +5,5 @@ function getFavicon() {
         $(this).prepend('<img src="http://www.google.com/s2/favicons?domain=' + faviconUrl + '">')
     });
 }
+
+getFavicon()
